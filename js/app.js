@@ -12,17 +12,23 @@ for(var i = 1; i <= numMax; i++){
     //Multipli di 3
     if(i % 3 === 0){
         message = 'Fizz';
+        //Alternativo
+        // message += 'Fizz';
     }
     //Multipli di 5
     if(i % 5 === 0){
         //Controlliamo se il numero è un multiplo di 3 e 5
         message = message ? message+'Buzz' : 'Buzz';
+        //Alternativo
+        // message += 'Buzz';
     }
 
     //Multipli di 6
     if(i % 6 === 0){
         //Controlliamo se il numero è un multiplo di 3 e 5
         message = message ? message+'Boolean' : 'Boolean';
+        //Alternativo
+        // message += 'Boolean';
     }
     console.log(i + ' ' + message);
 }
@@ -48,7 +54,8 @@ for(var i = 1; i <= numMax; i++){
     //Cicliamo i multipli dell'array insieme i corrispettivi messagi
     for(var j = 0; j < multiples.length; j++){
         if(i % multiples[j] === 0){
-            message = message ? message+messages[j] : messages[j];
+            //message = message ? message+messages[j] : messages[j];
+            message += messages[j];
         }
     }
     console.log(i + ' ' + message);
