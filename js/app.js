@@ -7,7 +7,7 @@
 
 var numMax = 100;
 
-for(var i = 1; i < numMax + 1; i++){
+for(var i = 1; i <= numMax; i++){
     var message = '';
     //Multipli di 3
     if(i % 3 === 0){
@@ -43,7 +43,7 @@ var messages = ['Fizz','Buzz','Boolean','Super'];
 //Fino a quanto
 var numMax = 100;
 
-for(var i = 1; i < numMax + 1; i++){
+for(var i = 1; i <= numMax; i++){
     var message = '';
     //Cicliamo i multipli dell'array insieme i corrispettivi messagi
     for(var j = 0; j < multiples.length; j++){
