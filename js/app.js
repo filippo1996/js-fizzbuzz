@@ -16,7 +16,16 @@ for(var i = 1; i < numMax + 1; i++){
     //Multipli di 5
     if(i % 5 === 0){
         //Controlliamo se il numero è un multiplo di 3 e 5
-        message = message ? 'FizzBuzz' : 'Buzz';
+        message = message ? message+'Buzz' : 'Buzz';
+    }
+
+    //Multipli di 6
+    if(i % 6 === 0){
+        //Controlliamo se il numero è un multiplo di 3 e 5
+        message = message ? message+'Boolean' : 'Boolean';
     }
     console.log(i + ' ' + message);
 }
+
+
+
