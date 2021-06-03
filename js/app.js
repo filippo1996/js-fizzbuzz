@@ -28,4 +28,28 @@ for(var i = 1; i < numMax + 1; i++){
 }
 
 
+/**
+ * Bonus ++
+ * Rendiamo l'algoritmo più elestico possibile
+ */
+ console.log('--BONUS--');
 
+//Array di multipli
+var multiples = [3,5,6,7];
+
+//Array di messaggi
+var messages = ['Fizz','Buzz','Boolean','Super'];
+
+//Fino a quanto
+var numMax = 100;
+
+for(var i = 1; i < numMax + 1; i++){
+    var message = '';
+    //Cicliamo i multipli dell'array insieme i corrispettivi messagi
+    for(var j = 0; j < multiples.length; j++){
+        if(i % multiples[j] === 0){
+            message = message ? message+messages[j] : messages[j];
+        }
+    }
+    console.log(i + ' ' + message);
+}
